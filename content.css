@@ -1,0 +1,5 @@
+/* Keep original pictures hidden until they've been swapped, so they never flash on screen.
+   content.js sets data-feldman-off on <html> when the extension is switched off. */
+html:not([data-feldman-off]) img:not([data-feldman="img"]) {
+  opacity: 0 !important;
+}
